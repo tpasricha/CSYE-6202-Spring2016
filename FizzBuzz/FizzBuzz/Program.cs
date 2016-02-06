@@ -6,9 +6,12 @@ namespace FizzBuzz
 
     { static void Main(string[] args)
       {
-            FizzBuzz fs = new FizzBuzz();
-           string result = fs.RunFizzBuzz(98);
-            Console.Write(result);
+            FizzBuzz fb = new FizzBuzz();
+              string result = fb.RunFizzBuzz(0);
+        //    string result = fb.RunFizzBuzz(3);
+        //    string result = fb.RunFizzBuzz(5);
+        //    string result = fb.RunFizzBuzz(15);
+             Console.Write(result);
             // Console.ReadKey();
             Console.ReadLine();
       }
