@@ -4,34 +4,66 @@ namespace TrianglePatterns
 {
 	class Program
 	{
-		static void Main(string[] args)
+            static void Main(string[] args)
 		{
 			DisplayPatternA();
 			DisplayPatternB();
 			DisplayPatternC();
 			DisplayPatternD();
+         
+            Console.ReadLine();
+        }
 
-			Console.ReadLine();
-		}
-
-		static void DisplayPatternA()
+        static void DisplayPatternA()
 		{
-			// your implementation here
+                for (int row = 0; row < 10; row++)
+            {
+                for (int column = 0; column <= row; column++)
+                     Console.Write("*");
+                     Console.WriteLine();
+            }
+
+            Console.WriteLine();
 		}
 
 		static void DisplayPatternB()
 		{
-			// your implementation here
-		}
+            for (int row = 10; row > 0; row--)
+            {
+                for (int column = 0; column < row; column++)
+                    Console.Write("*");
+                    Console.WriteLine();
+            }
+
+            Console.WriteLine();
+        }
 
 		static void DisplayPatternC()
 		{
-			// your implementation here
-		}
+			for(int row = 0;row<10;row++)
+            {
+                for(int column=0;column< row; column++)
+                    Console.Write(" ");
+
+                for (int column = 0; column < 10 - row; column++)
+                    Console.Write("*");
+                    Console.WriteLine();             
+            }
+            Console.WriteLine();
+        }
 
 		static void DisplayPatternD()
 		{
-			// your implementation here
-		}
+            for (int row = 10; row >= 0; row--)
+            {
+                for (int column = 0; column < row; column++)
+                    Console.Write(" ");
+
+                for (int column = 0; column < 10 - row; column++)
+                    Console.Write("*");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
 	}
 }
