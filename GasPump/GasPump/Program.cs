@@ -1,79 +1,178 @@
-﻿using System;
+﻿using System.IO;
+using System;
 
-namespace GasPump
+public class Program
 {
-	public class Program
-	{
-		public enum GasType
-		{
-			None,
-			RegularGas,
-			MidgradeGas,
-			PremiumGas,
-			DieselFuel				
-		}
+    public enum GasType
+    {
+        None,
+        RegularGas,
+        MidgradeGas,
+        PremiumGas,
+        DieselFuel
+    }
 
-		static void Main(string[] args)
-		{
-			// your implementation here
-		}
+    static void Main(string[] args)
+    {
 
-		// use this method to check and see if sentinel value is entered
-		public static bool UserEnteredSentinelValue(string userInput)
-		{
-			var result = false;
+        string userInput = String.Empty;
+        GasType gasType = GasType.None;
+        int gasAmount;
+        double totalCost=0.0;
+        while (true)
+        {
+            Console.WriteLine("Please enter purchased gas type, Q/q to quit:");
+            userInput = Console.ReadLine();
+            if (UserEnteredSentinelValue(userInput) || !UserEnteredValidGasType(userInput))
+                break;
+            gasType = GasTypeMapper(userInput[0]);
 
-			// your implementation here
+            Console.WriteLine("Please enter purchased gas amount, Q/q to quit:");
+            userInput = Console.ReadLine();
 
-			return result;
-		}
+            if (UserEnteredSentinelValue(userInput) && !UserEnteredValidAmount(userInput))
+                break;
+            gasAmount = Int32.Parse(userInput);                        
+            totalCost = GasPriceMapper(gasType);
+            CalculateTotalCost(gasType, gasAmount, ref totalCost);
+           }
+    }   
 
-		// use this method to parse and check the characters entered
-		// this does not conform 
-		public static bool UserEnteredValidGasType(string userInput)
-		{
-			var result = false;
+    // use this method to check and see if sentinel value is entered
+    public static bool UserEnteredSentinelValue(string userInput)
+    {
+        var result = false;
+        if(userInput == null)
+            return false;
+        else if (userInput == "Q" || userInput == "q")
+        {
+            result = true;
+            Console.WriteLine("Application terminated");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadLine();         
 
-			// your implementation here
-			
-			return result;
-		}
+        }
+        return result;
+    }
 
-		// use this method to parse and check the double type entered
-		// please use Double.TryParse() method 
-		public static bool UserEnteredValidAmount(string userInput)
-		{
-			var result = false;
+    // use this method to parse and check the characters entered
+    // this does not conform 
+    public static bool UserEnteredValidGasType(string userInput)
+    {
+        var result = false;
+        if (userInput != null)
+        {
+            if (userInput.Equals("p") || userInput.Equals("P"))
+                return true;
+            else if (userInput.Equals("m") || userInput.Equals("M"))
+                return true;
+            else if (userInput.Equals("r") || userInput.Equals("R"))
+                return true;
+            else if (userInput.Equals("d") || userInput.Equals("D"))
+                return true;
+            {
+                return false;
+            }
+        }
+            return result;
+    }
 
-			// your implementation here
+    // use this method to parse and check the double type entered
+    // please use Double.TryParse() method 
+    public static bool UserEnteredValidAmount(string userInput)
+    {
+        var result = false;
+        int i = 0;
+        if (userInput != null)
+        {
+            if (int.TryParse(userInput, out i))
+                result = true;
+            {
+                return false;
+            }
+        }
+        return result;
+    }
 
-			return result;
-		}
+    // use this method to map a valid char entry to its enum representation
+    // e.g. User enters 'R' or 'r' --> this should be mapped to GasType.RegularGas
+    // this mapping "must" be used within CalculateTotalCost() method later on
+    public static GasType GasTypeMapper(char c)
+    {
+        GasType gasType = GasType.None;
+        //c = Console.ReadLine(gasType);
+        switch (c)
+        {
+            case 'r':
+            case 'R':
+                gasType = GasType.RegularGas;
+                break;
+            case 'm':
+            case 'M':
+                gasType = GasType.MidgradeGas;
+                break;
+            case 'p':
+            case 'P':
+                gasType = GasType.PremiumGas;
+                break;
+            case 'd':
+            case 'D':
+                gasType = GasType.DieselFuel;
+                break;
+        }
 
-		// use this method to map a valid char entry to its enum representation
-		// e.g. User enters 'R' or 'r' --> this should be mapped to GasType.RegularGas
-		// this mapping "must" be used within CalculateTotalCost() method later on
-		public static GasType GasTypeMapper(char c)
-		{
-			GasType gasType = GasType.None;
+        return gasType;
+    }
 
-			// your implementation here
+    public static double GasPriceMapper(GasType gasType)
+    {
+        var result = 0.0;
 
-			return gasType;
-		}
+        // your implementation here
+        switch (gasType)
+        {
+            case GasType.RegularGas:
+                result = 1.94;
+                break;
+            case GasType.MidgradeGas:
+                result = 2.00;
+                break;
+            case GasType.PremiumGas:
+                result = 2.24;
+                break;
+            case GasType.DieselFuel:
+                result = 2.17;
+                break;
+        }
 
-		public static double GasPriceMapper(GasType gasType)
-		{
-			var result = 0.0;
+        return result;
+    }
 
-			// your implementation here
-
-			return result;
-	}
-
-		public static void CalculateTotalCost(GasType gasType, int gasAmount, ref double totalCost)
-		{
-			// your implementation here
-		}
-	}
+    public static void CalculateTotalCost(GasType gasType, int gasAmount, ref double totalCost)
+    {
+        // your implementation here
+        if((gasType == GasType.RegularGas) && (gasAmount>0))
+        {
+            totalCost = gasAmount * 1.94;
+        }
+        else if ((gasType == GasType.MidgradeGas) && (gasAmount > 0))
+        {
+            totalCost = gasAmount * 2.00;
+        {
+            totalCost = gasAmount * 2.17;
+        }
+        else
+        }
+        else if ((gasType == GasType.PremiumGas) && (gasAmount > 0))
+        {
+            totalCost = gasAmount * 2.24;
+        }
+        else if ((gasType == GasType.DieselFuel) && (gasAmount > 0))
+        {
+            totalCost = 0;
+        }
+        Console.WriteLine("You bought " + gasAmount + " gallons of " + gasType.ToString() + " at $" + totalCost);
+        totalCost = gasAmount * totalCost;
+        Console.WriteLine("Your total cost for this purchase is: $" + totalCost);
+    }
 }
