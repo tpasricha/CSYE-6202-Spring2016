@@ -158,16 +158,16 @@ public class Program
         else if ((gasType == GasType.MidgradeGas) && (gasAmount > 0))
         {
             totalCost = gasAmount * 2.00;
-        {
-            totalCost = gasAmount * 2.17;
-        }
-        else
         }
         else if ((gasType == GasType.PremiumGas) && (gasAmount > 0))
         {
             totalCost = gasAmount * 2.24;
         }
         else if ((gasType == GasType.DieselFuel) && (gasAmount > 0))
+        {
+            totalCost = gasAmount * 2.17;
+        }
+        else
         {
             totalCost = 0;
         }
