@@ -17,8 +17,8 @@ public class Program
 
         string userInput = String.Empty;
         GasType gasType = GasType.None;
-        int gasAmount;
-        double totalCost=0.0;
+        double gasAmount = 0.0d;
+        double totalCost=0.0d;
         while (true)
         {
             Console.WriteLine("Please enter purchased gas type, Q/q to quit:");
@@ -32,10 +32,12 @@ public class Program
 
             if (UserEnteredSentinelValue(userInput) && !UserEnteredValidAmount(userInput))
                 break;
-            gasAmount = Int32.Parse(userInput);                        
+            gasAmount = Double.Parse(userInput);
+            Console.WriteLine("You bought " + gasAmount + " gallons of " + gasType.ToString() + " at $" + GasPriceMapper(gasType));
             totalCost = GasPriceMapper(gasType);
             CalculateTotalCost(gasType, gasAmount, ref totalCost);
-           }
+            Console.WriteLine("Your total cost for this purchase is: $" + totalCost);
+        }
     }   
 
     // use this method to check and see if sentinel value is entered
@@ -82,15 +84,9 @@ public class Program
     public static bool UserEnteredValidAmount(string userInput)
     {
         var result = false;
-        int i = 0;
-        if (userInput != null)
-        {
-            if (int.TryParse(userInput, out i))
+        double i = 0;
+            if (double.TryParse(userInput, out i))
                 result = true;
-            {
-                return false;
-            }
-        }
         return result;
     }
 
@@ -148,7 +144,7 @@ public class Program
         return result;
     }
 
-    public static void CalculateTotalCost(GasType gasType, int gasAmount, ref double totalCost)
+    public static void CalculateTotalCost(GasType gasType, double gasAmount, ref double totalCost)
     {
         // your implementation here
         if((gasType == GasType.RegularGas) && (gasAmount>0))
@@ -170,9 +166,6 @@ public class Program
         else
         {
             totalCost = 0;
-        }
-        Console.WriteLine("You bought " + gasAmount + " gallons of " + gasType.ToString() + " at $" + totalCost);
-        totalCost = gasAmount * totalCost;
-        Console.WriteLine("Your total cost for this purchase is: $" + totalCost);
+        }       
     }
 }
