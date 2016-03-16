@@ -36,6 +36,7 @@ namespace PayrollSystem
             this.lastName = lastName;
             this.socialSecurityNumber = ssn;
         }
+
         public override string ToString()
         {
             return String.Format("{0} {1}\nsocial security number: {2}" ,firstName, lastName, socialSecurityNumber);
