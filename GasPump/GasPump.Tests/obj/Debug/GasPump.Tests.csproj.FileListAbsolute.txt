@@ -1,0 +1,9 @@
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\GasPump.Tests.dll
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\GasPump.Tests.pdb
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\GasPump.exe
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\nunit.framework.dll
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\GasPump.pdb
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\bin\Debug\nunit.framework.xml
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.csprojResolveAssemblyReference.cache
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.dll
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump.Tests\obj\Debug\GasPump.Tests.pdb

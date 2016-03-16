@@ -1,0 +1,6 @@
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\bin\Debug\GasPump.exe.config
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\bin\Debug\GasPump.exe
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\bin\Debug\GasPump.pdb
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\obj\Debug\GasPump.exe
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\obj\Debug\GasPump.pdb
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\GasPump\GasPump\obj\Debug\GasPump.csprojResolveAssemblyReference.cache

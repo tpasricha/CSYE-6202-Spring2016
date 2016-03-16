@@ -1,0 +1,8 @@
+D:\test\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.exe.config
+D:\test\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.exe
+D:\test\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.pdb
+D:\test\PayrollSystem\PayrollSystem\obj\Debug\PayrollSystem.exe
+D:\test\PayrollSystem\PayrollSystem\obj\Debug\PayrollSystem.pdb
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\PayrollSystem\PayrollSystem\bin\Debug\PayrollSystem.exe.config
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\PayrollSystem\PayrollSystem\obj\Debug\PayrollSystem.exe
+C:\Users\tasleen\Source\Repos\tas\CSYE-6202-Spring2016\PayrollSystem\PayrollSystem\obj\Debug\PayrollSystem.pdb
