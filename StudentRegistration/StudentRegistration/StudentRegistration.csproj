@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA556BF6-255E-4C60-832A-49D4C6B46621}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentRegistration</RootNamespace>
+    <AssemblyName>StudentRegistration</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="EditStudentConfirmationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentConfirmationPage.Designer.cs">
+      <DependentUpon>EditStudentConfirmationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentPage.Designer.cs">
+      <DependentUpon>EditStudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentWarningPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentWarningPage.Designer.cs">
+      <DependentUpon>EditStudentWarningPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStudentPage.Designer.cs">
+      <DependentUpon>NewStudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudentWarningPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStudentWarningPage.Designer.cs">
+      <DependentUpon>NewStudentWarningPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomGenerator.cs" />
+    <Compile Include="RemoveStudentConfirmationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStudentConfirmationPage.Designer.cs">
+      <DependentUpon>RemoveStudentConfirmationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStudentPage.Designer.cs">
+      <DependentUpon>RemoveStudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs" />
+    <EmbeddedResource Include="EditStudentConfirmationPage.resx">
+      <DependentUpon>EditStudentConfirmationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentPage.resx">
+      <DependentUpon>EditStudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentWarningPage.resx">
+      <DependentUpon>EditStudentWarningPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStudentPage.resx">
+      <DependentUpon>NewStudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStudentWarningPage.resx">
+      <DependentUpon>NewStudentWarningPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveStudentConfirmationPage.resx">
+      <DependentUpon>RemoveStudentConfirmationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStudentPage.resx">
+      <DependentUpon>RemoveStudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
