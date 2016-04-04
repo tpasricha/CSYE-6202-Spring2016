@@ -192,6 +192,7 @@
             // 
             // btnNewStudent
             // 
+            this.btnNewStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewStudent.Location = new System.Drawing.Point(528, 52);
             this.btnNewStudent.Name = "btnNewStudent";
             this.btnNewStudent.Size = new System.Drawing.Size(110, 36);
@@ -202,6 +203,7 @@
             // 
             // btnRemoveStudent
             // 
+            this.btnRemoveStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveStudent.Location = new System.Drawing.Point(529, 113);
             this.btnRemoveStudent.Name = "btnRemoveStudent";
             this.btnRemoveStudent.Size = new System.Drawing.Size(109, 40);
@@ -212,6 +214,7 @@
             // 
             // btnEditStudent
             // 
+            this.btnEditStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditStudent.Location = new System.Drawing.Point(529, 179);
             this.btnEditStudent.Name = "btnEditStudent";
             this.btnEditStudent.Size = new System.Drawing.Size(109, 38);

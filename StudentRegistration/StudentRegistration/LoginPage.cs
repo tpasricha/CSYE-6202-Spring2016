@@ -38,13 +38,14 @@ namespace StudentRegistration
                 {
                     labelLoginInfo.Text = "Access Granted";
                     loginattempt = 0;
+                MessageBox.Show("Welcome to the student registration portal!!", "Login Confirmation",MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     mp.Show();
                 }
                 else if (loginattempt==3)
                 {
                     labelLoginInfo.Text = "Last chance";
-                    MessageBox.Show("Sorry!! Maximum attempts reached. Application is closing");
+                    MessageBox.Show("Sorry!! Maximum attempts reached. Try again next time");
                     this.Close();
                  }
                 else 
@@ -53,9 +54,14 @@ namespace StudentRegistration
                 txtUsername.Text = "";
                 txtPassword.Text = "";
                 MessageBox.Show("Invalid Username or Password!! Please enter again, you have reached attempt "+ loginattempt+ " of 3");
+                labelLoginInfo.Hide();
                 loginattempt += 1;
                 }
             }
-        
-         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

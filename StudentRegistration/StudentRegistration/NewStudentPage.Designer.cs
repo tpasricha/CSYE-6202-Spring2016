@@ -72,6 +72,7 @@
             this.comboBoxDeptt.Name = "comboBoxDeptt";
             this.comboBoxDeptt.Size = new System.Drawing.Size(176, 21);
             this.comboBoxDeptt.TabIndex = 9;
+            this.comboBoxDeptt.SelectedIndexChanged += new System.EventHandler(this.comboBoxDeptt_SelectedIndexChanged);
             // 
             // txtBoxLast
             // 
@@ -79,6 +80,7 @@
             this.txtBoxLast.Name = "txtBoxLast";
             this.txtBoxLast.Size = new System.Drawing.Size(176, 20);
             this.txtBoxLast.TabIndex = 8;
+            this.txtBoxLast.TextChanged += new System.EventHandler(this.txtBoxLast_TextChanged);
             // 
             // txtBoxFirst
             // 
@@ -86,6 +88,7 @@
             this.txtBoxFirst.Name = "txtBoxFirst";
             this.txtBoxFirst.Size = new System.Drawing.Size(176, 20);
             this.txtBoxFirst.TabIndex = 7;
+            this.txtBoxFirst.TextChanged += new System.EventHandler(this.txtBoxFirst_TextChanged);
             // 
             // txtBoxId
             // 
@@ -183,6 +186,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(278, 341);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(79, 36);
@@ -193,6 +197,7 @@
             // 
             // btnReset
             // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(387, 341);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(82, 36);
@@ -205,12 +210,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(503, 421);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "NewStudentPage";
             this.Text = "NewStudentPage";
             this.Load += new System.EventHandler(this.NewStudentPage_Load);

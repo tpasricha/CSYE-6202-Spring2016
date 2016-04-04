@@ -15,18 +15,30 @@ namespace StudentRegistration
     {
         private List<Student> studentList;
         private string[] departmentNames;
+        private bool isChanged = false;
         public NewStudentPage(string[] departmentNames)
         {
             InitializeComponent();
             LoadDepttComboBox();
-            radioFull.Select();
-            comboBoxDeptt.SelectedIndex = 0;
+            comboBoxDeptt.SelectedIndex = -1;
             this.departmentNames = departmentNames;
+            if (isChanged)
+            {
+                btnAdd.Enabled = true;
+                btnReset.Enabled = true;
+            }
+            else
+            {
+                btnAdd.Enabled = false;
+                btnReset.Enabled = false;
+            }
         }
 
         private void txtBoxId_TextChanged(object sender, EventArgs e)
         {
-
+            isChanged = true;
+            btnAdd.Enabled = true;
+            btnReset.Enabled = true;
         }
 
         private void NewStudentPage_Load(object sender, EventArgs e)
@@ -50,6 +62,7 @@ namespace StudentRegistration
             string studentId = txtBoxId.Text;
             string firstName = txtBoxFirst.Text;
             string lastName = txtBoxLast.Text;
+            
             if (studentId == "" || studentId.Trim().Equals("") || firstName == "" || firstName.Trim().Equals("") || lastName == "" || lastName.Trim().Equals(""))
             {
                 MessageBox.Show("Please fill in all the fields", "New Student Warning Page", MessageBoxButtons.OK,MessageBoxIcon.Warning);
@@ -84,6 +97,27 @@ namespace StudentRegistration
             txtBoxFirst.Text = "";
             txtBoxLast.Text = "";
             txtBoxId.Focus();
+        }
+
+        private void txtBoxFirst_TextChanged(object sender, EventArgs e)
+        {
+            isChanged = true;
+            btnAdd.Enabled = true;
+            btnReset.Enabled = true;
+        }
+
+        private void txtBoxLast_TextChanged(object sender, EventArgs e)
+        {
+            isChanged = true;
+            btnAdd.Enabled = true;
+            btnReset.Enabled = true;
+        }
+
+        private void comboBoxDeptt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            isChanged = true;
+            btnAdd.Enabled = true;
+            btnReset.Enabled = true;
         }
     }
 }

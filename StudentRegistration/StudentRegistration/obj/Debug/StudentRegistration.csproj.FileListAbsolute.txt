@@ -2,15 +2,11 @@ D:\test\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.ex
 D:\test\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.exe
 D:\test\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.pdb
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csprojResolveAssemblyReference.cache
-D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.EditStudentConfirmationPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.EditStudentPage.resources
-D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.EditStudentWarningPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.LoginPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.MainPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.NewStudentPage.resources
-D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.NewStudentWarningPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.Properties.Resources.resources
-D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.RemoveStudentConfirmationPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.RemoveStudentPage.resources
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csproj.GenerateResource.Cache
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.exe

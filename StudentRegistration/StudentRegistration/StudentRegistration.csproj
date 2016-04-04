@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,23 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
-    <Compile Include="EditStudentConfirmationPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditStudentConfirmationPage.Designer.cs">
-      <DependentUpon>EditStudentConfirmationPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditStudentPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditStudentPage.Designer.cs">
       <DependentUpon>EditStudentPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EditStudentWarningPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditStudentWarningPage.Designer.cs">
-      <DependentUpon>EditStudentWarningPage.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -83,21 +86,9 @@
     <Compile Include="NewStudentPage.Designer.cs">
       <DependentUpon>NewStudentPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewStudentWarningPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewStudentWarningPage.Designer.cs">
-      <DependentUpon>NewStudentWarningPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomGenerator.cs" />
-    <Compile Include="RemoveStudentConfirmationPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RemoveStudentConfirmationPage.Designer.cs">
-      <DependentUpon>RemoveStudentConfirmationPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="RemoveStudentPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,14 +96,8 @@
       <DependentUpon>RemoveStudentPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <EmbeddedResource Include="EditStudentConfirmationPage.resx">
-      <DependentUpon>EditStudentConfirmationPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditStudentPage.resx">
       <DependentUpon>EditStudentPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditStudentWarningPage.resx">
-      <DependentUpon>EditStudentWarningPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -122,9 +107,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudentPage.resx">
       <DependentUpon>NewStudentPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewStudentWarningPage.resx">
-      <DependentUpon>NewStudentWarningPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,9 +118,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RemoveStudentConfirmationPage.resx">
-      <DependentUpon>RemoveStudentConfirmationPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RemoveStudentPage.resx">
       <DependentUpon>RemoveStudentPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +148,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
