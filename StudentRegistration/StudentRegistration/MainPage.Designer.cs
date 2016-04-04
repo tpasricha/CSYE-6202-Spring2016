@@ -243,6 +243,7 @@
             this.Controls.Add(this.btnNewStudent);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.panel1.ResumeLayout(false);

@@ -11,3 +11,16 @@ D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.Re
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csproj.GenerateResource.Cache
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.exe
 D:\test\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.pdb
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.exe.config
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.exe
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.pdb
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.exe
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\bin\Debug\StudentRegistration.pdb
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csprojResolveAssemblyReference.cache
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.EditStudentPage.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.LoginPage.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.MainPage.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.NewStudentPage.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.Properties.Resources.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.RemoveStudentPage.resources
+C:\Users\tasleen\Source\Repos\CSYE-6202-Spring20162\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csproj.GenerateResource.Cache

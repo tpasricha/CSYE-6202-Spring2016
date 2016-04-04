@@ -212,6 +212,7 @@
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "RemoveStudentPage";
             this.Text = "RemoveStudentPage";
             this.panel1.ResumeLayout(false);

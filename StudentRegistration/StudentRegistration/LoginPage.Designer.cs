@@ -130,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "LoginPage";
             this.Text = "Login ";
             this.Load += new System.EventHandler(this.Form1_Load);

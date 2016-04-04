@@ -212,6 +212,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "EditStudentPage";
             this.Text = "EditStudentPage";
             this.panel1.ResumeLayout(false);
