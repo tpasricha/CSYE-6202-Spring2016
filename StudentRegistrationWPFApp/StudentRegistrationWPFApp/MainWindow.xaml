@@ -1,0 +1,24 @@
+﻿<Window x:Class="StudentRegistrationWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentRegistrationWPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="367.847" Width="540.864" ResizeMode="NoResize">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid Background="#FFAE3939">
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Label x:Name="lblUsername" Content="USERNAME" HorizontalAlignment="Left" Margin="102,91,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="18.667"/>
+        <Label x:Name="lblPassword" Content="PASSWORD" HorizontalAlignment="Left" Margin="102,153,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="18.667"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="253,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSubmit" Content="Sign Up!" HorizontalAlignment="Left" Margin="335,238,0,0" VerticalAlignment="Top" Width="111" Height="41" Click="btnSubmit_Click" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="253,153,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label x:Name="lblLoginInfo" Content="" HorizontalAlignment="Left" Margin="215,25,0,0" VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Window>
