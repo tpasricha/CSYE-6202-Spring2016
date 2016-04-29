@@ -1,0 +1,11 @@
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\AirlineReservationApp.Tests.dll
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\AirlineReservationApp.Tests.pdb
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\MysqlLogin.exe
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\nunit.framework.dll
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\log4net.dll
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\MysqlLogin.pdb
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\nunit.framework.xml
+D:\test\MysqlLogin\AirlineReservationApp.Tests\bin\Debug\log4net.xml
+D:\test\MysqlLogin\AirlineReservationApp.Tests\obj\Debug\AirlineReservationApp.Tests.csprojResolveAssemblyReference.cache
+D:\test\MysqlLogin\AirlineReservationApp.Tests\obj\Debug\AirlineReservationApp.Tests.dll
+D:\test\MysqlLogin\AirlineReservationApp.Tests\obj\Debug\AirlineReservationApp.Tests.pdb
